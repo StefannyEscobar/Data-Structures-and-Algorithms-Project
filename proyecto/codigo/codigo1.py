@@ -14,7 +14,7 @@ def leer_csv_enfermo (folder_path,lista_df,names):
 def leer_csv_sano (folder_path,lista_df,names):
     names = os.listdir(folder_path)
     for i in names:   
-        archivo = pd.read_csv(r'C:\Users\ASUS\OneDrive - Universidad EAFIT\ST0245-Eafit\proyecto\datasets\csv\sano_csv\{}'.format(i))
+        archivo = pd.read_csv(r'''C:\Users\ASUS\OneDrive - Universidad EAFIT\ST0245-Eafit\proyecto\datasets\csv\sano_csv\{}'''.format(i))
         lista_df.append(archivo)
     return lista_df
 
