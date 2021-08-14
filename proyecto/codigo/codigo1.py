@@ -19,11 +19,12 @@ def leer_csv_sano (folder_path,lista_df,names):
     return lista_df
 
 def __main__():
-    folder_path = r'C:\Users\ASUS\OneDrive - Universidad EAFIT\ST0245-Eafit\proyecto\datasets\csv\enfermo_csv'
+    folder_path_enfermo = r'C:\Users\ASUS\OneDrive - Universidad EAFIT\ST0245-Eafit\proyecto\datasets\csv\enfermo_csv'
+    folder_path_sano = r'C:\Users\ASUS\OneDrive - Universidad EAFIT\ST0245-Eafit\proyecto\datasets\csv\sano_csv'
     names = []
     files = []
-    leer_csv_enfermo(folder_path, files, names)
-    leer_csv_sano(folder_path, files, names)
+    leer_csv_enfermo(folder_path_enfermo, files, names)
+    leer_csv_sano(folder_path_sano, files, names)
    
 __main__()
 
